@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "generator_hasel", "generator_hasel.csproj", "{1F8AB179-385A-4209-B262-D0788F69113C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "generatorHaselTest", "..\generatorHaselTest\generatorHaselTest.csproj", "{48C7EF25-BBDC-4327-9514-1520935C15E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1F8AB179-385A-4209-B262-D0788F69113C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F8AB179-385A-4209-B262-D0788F69113C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F8AB179-385A-4209-B262-D0788F69113C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48C7EF25-BBDC-4327-9514-1520935C15E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48C7EF25-BBDC-4327-9514-1520935C15E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48C7EF25-BBDC-4327-9514-1520935C15E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48C7EF25-BBDC-4327-9514-1520935C15E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

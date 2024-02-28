@@ -6,19 +6,25 @@ using System.Threading.Tasks;
 
 namespace generator_hasel
 {
-    internal class PasswordGenerator : UserControl
+    public class PasswordGenerator : UserControl
     {
         private List<Char> passwordCharList = new List<Char>();
         private readonly Random rng = new();
-        private String? generatedPassword;
+        private String generatedPassword;
 
         public String generatePassword(int password_length, Boolean isBigLetters, Boolean isSmallLetters, 
             Boolean isNumbers, Boolean isSpecialSigns)
         {
+            passwordCharList.Clear();  
+            
+            if (password_length <= 5 ) 
+            {
+                throw new WrongPasswordLengthException("Hasło powinno mieć długosc co najmniej 6 znakow.");           
+            }
+
             if (!isBigLetters && !isSmallLetters && !isNumbers && !isSpecialSigns) 
             {
-                System.Console.WriteLine("You should pick at least one type of signs");
-                return "ERROR";
+                throw new AnyCheckBoxSelectedException("Przynajmniej jedna z opcji powinna zostać wybrana.");
             }
             if (isBigLetters)
             {
@@ -37,7 +43,7 @@ namespace generator_hasel
                 this.addSignsToList(passwordCharList, "specialSigns");
             }
 
-            for (int i = 0; i <= password_length; i++)
+            for (int i = 1; i <= password_length; i++)
             {
                 generatedPassword += passwordCharList[rng.Next(passwordCharList.Count)];
             }
