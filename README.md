@@ -1,2 +1,7 @@
-# Projekt---Etap-0
-Programowanie współbieżne - etap 0
+# Concurrent programming
+
+## Working Group
+
+| Name Surname (initials) | GUID                                     |
+| ----------------------- | ---------------------------------------- |
+| WS                      | `{247793}`                               |
